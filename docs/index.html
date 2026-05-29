@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ERGeoBench: A benchmark for embodied reasoning and geo-localization in multimodal large language models." />
+  <title>ERGeoBench</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="badge">ICML 2026</div>
+      <h1>ERGeoBench</h1>
+      <p class="subtitle">
+        A Comprehensive Benchmark for Embodied Reasoning and Geo-localization
+        in Multimodal Large Language Models
+      </p>
+      <p class="summary">
+        ERGeoBench evaluates whether multimodal large language models can actively
+        explore street-view environments and progressively infer their geographic
+        location through observation, evidence verification, hypothesis updating,
+        and action planning.
+      </p>
+      <div class="links">
+        <a href="https://github.com/kaiXuewen/ERGeoBench" class="button primary">Code</a>
+        <a href="#paper" class="button">Paper</a>
+        <a href="#dataset" class="button">Dataset</a>
+        <a href="#citation" class="button">Citation</a>
+      </div>
+    </section>
+
+    <section class="notice">
+      Code, prompt templates, evaluation scripts, annotations, and Street View
+      panorama identifiers will be released soon.
+    </section>
+
+    <section>
+      <h2>Overview</h2>
+      <p>
+        Existing geo-localization benchmarks usually evaluate models using a
+        single image or a full panoramic observation. ERGeoBench studies a more
+        active setting: an embodied agent can rotate, pitch, and zoom to gather
+        evidence over multiple steps. The benchmark is designed to diagnose
+        vision-driven embodied geo-localization in multimodal large language models.
+      </p>
+    </section>
+
+    <section>
+      <h2>Evaluation Settings</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Single-view</h3>
+          <p>The model receives one fixed perspective view and predicts the location from limited evidence.</p>
+        </article>
+        <article class="card">
+          <h3>Panorama-view</h3>
+          <p>The model receives the full panorama, providing broad visual coverage without sequential exploration.</p>
+        </article>
+        <article class="card">
+          <h3>Embodied-view</h3>
+          <p>The model actively controls yaw, pitch, and zoom to collect evidence and refine its hypothesis.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Capability Dimensions</h2>
+      <ul class="clean-list">
+        <li><strong>Foundational Perception:</strong> recognition of architecture, signage, vegetation, terrain, and infrastructure.</li>
+        <li><strong>Spatial Awareness:</strong> viewpoint, direction, depth, relative position, and cross-view consistency.</li>
+        <li><strong>Commonsense Reasoning:</strong> geographic, environmental, cultural, and functional inference.</li>
+        <li><strong>Geo-localization:</strong> country, city, street or area, and GPS prediction.</li>
+      </ul>
+    </section>
+
+    <section id="dataset">
+      <h2>Data Release</h2>
+      <p>
+        To support reproducibility while respecting data redistribution constraints,
+        we will release panorama identifiers and metadata rather than redistributing
+        raw Street View imagery. Users should retrieve corresponding visual observations
+        through official data access interfaces and comply with applicable terms of use.
+      </p>
+      <pre><code>sample_id,pano_id,country,city,split
+000001,PLACEHOLDER_PANO_ID,Japan,Tokyo,test
+000002,PLACEHOLDER_PANO_ID,France,Paris,test</code></pre>
+    </section>
+
+    <section>
+      <h2>Release Plan</h2>
+      <ul class="checklist">
+        <li>Evaluation scripts for Single-view, Panorama-view, and Embodied-view settings</li>
+        <li>Prompt templates for embodied geo-localization</li>
+        <li>Benchmark metadata and annotation files</li>
+        <li>Street View panorama identifiers</li>
+        <li>Model prediction files and evaluation utilities</li>
+      </ul>
+    </section>
+
+    <section id="paper">
+      <h2>Paper</h2>
+      <p>
+        The paper link will be updated after the official proceedings or preprint becomes available.
+      </p>
+    </section>
+
+    <section id="citation">
+      <h2>Citation</h2>
+      <pre><code>@inproceedings{xue2026ergeobench,
+  title     = {ERGeoBench: A Comprehensive Benchmark for Embodied Reasoning and Geo-localization in Multimodal Large Language Models},
+  author    = {Xue, Kaiwen and Wei, Tao and Ou, Zhonghong and Zhang, Guoxin and Lu, Kaoyan and Feng, Yu and Zhu, Yifan and Luo, Haoran},
+  booktitle = {Proceedings of the International Conference on Machine Learning},
+  year      = {2026}
+}</code></pre>
+    </section>
+
+    <footer>
+      <p>
+        ERGeoBench is intended for academic research on multimodal reasoning,
+        embodied perception, and geo-localization.
+      </p>
+    </footer>
+  </main>
+</body>
+</html>

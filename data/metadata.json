@@ -1,0 +1,12 @@
+{
+  "name": "ERGeoBench",
+  "status": "placeholder",
+  "description": "Metadata will be released after the official benchmark release.",
+  "fields": [
+    "sample_id",
+    "pano_id",
+    "country",
+    "city",
+    "split"
+  ]
+}

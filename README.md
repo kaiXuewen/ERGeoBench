@@ -283,7 +283,7 @@ For questions, please contact:
 ```text
 Kaiwen Xue
 Beijing University of Posts and Telecommunications
-Email: YOUR_EMAIL
+Email: xkw@bupt.edu.cn
 ```
 
 You can also open an issue in this repository after the official release.

@@ -216,3 +216,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Private credentials and local access configuration
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+secrets*.json
+secrets*.yaml

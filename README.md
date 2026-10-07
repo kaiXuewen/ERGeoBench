@@ -1,5 +1,10 @@
 # ERGeoBench
 
+## Geolocation metadata available
+
+The [geolocation data release](data/README.md) includes **2,207 unique panorama IDs from 56 countries**, with country, city, street and GPS labels. Download the [panorama index](data/pano_ids.csv) and [geolocation annotations](data/annotations/geolocalization.json). No images or API credentials are distributed. This release does not assign an official evaluation split; other task annotations and executable evaluation scripts remain pending.
+
+
 Official repository for **ERGeoBench: A Comprehensive Benchmark for Embodied Reasoning and Geo-localization in Multimodal Large Language Models**.
 
 ERGeoBench is a benchmark for evaluating whether multimodal large language models (MLLMs) can perform **vision-driven embodied geo-localization**. Unlike conventional geo-localization benchmarks that rely on a single image or a full panorama, ERGeoBench evaluates models under progressively interactive settings, including **Single-view**, **Panorama-view**, and **Embodied-view**. In the embodied setting, an agent actively controls yaw, pitch, and zoom to gather visual evidence and refine its location hypothesis over multiple steps.
@@ -80,8 +85,8 @@ We plan to release the following components:
 
 - [ ] Evaluation scripts for Single-view, Panorama-view, and Embodied-view settings
 - [ ] Prompt templates for all settings
-- [ ] Benchmark metadata and annotation files
-- [ ] Street View panorama identifiers
+- [x] Geolocation metadata and labels (other task annotations pending)
+- [x] Street View panorama identifiers
 - [ ] Model prediction files
 - [ ] Metric computation scripts
 - [ ] Data loading and preprocessing utilities

@@ -1,12 +1,24 @@
 {
   "name": "ERGeoBench",
-  "status": "placeholder",
-  "description": "Metadata will be released after the official benchmark release.",
-  "fields": [
-    "sample_id",
-    "pano_id",
-    "country",
-    "city",
-    "split"
+  "release": "geolocation-metadata-v1",
+  "panorama_count": 2207,
+  "country_count": 56,
+  "panorama_ids": "pano_ids.csv",
+  "annotations": "annotations/geolocalization.json",
+  "fields": {
+    "sample_id": "Release-local identifier; not an original benchmark split ID",
+    "pano_id": "Source panorama identifier",
+    "country": "Source country label",
+    "city": "Source city label",
+    "street": "Source street label",
+    "latitude": "Latitude in degrees",
+    "longitude": "Longitude in degrees"
+  },
+  "split": null,
+  "notes": [
+    "No official train/validation/test partition is specified.",
+    "Original source labels are preserved without geocoding or inferred corrections.",
+    "One duplicate demo panorama was merged using nonempty labels.",
+    "No imagery, credentials, source URLs or runtime configuration is included."
   ]
 }

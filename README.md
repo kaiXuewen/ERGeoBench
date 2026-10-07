@@ -9,7 +9,7 @@ Official repository for **ERGeoBench: A Comprehensive Benchmark for Embodied Rea
 
 ERGeoBench is a benchmark for evaluating whether multimodal large language models (MLLMs) can perform **vision-driven embodied geo-localization**. Unlike conventional geo-localization benchmarks that rely on a single image or a full panorama, ERGeoBench evaluates models under progressively interactive settings, including **Single-view**, **Panorama-view**, and **Embodied-view**. In the embodied setting, an agent actively controls yaw, pitch, and zoom to gather visual evidence and refine its location hypothesis over multiple steps.
 
-> Code, prompts, evaluation scripts, annotation files, and panorama identifiers will be released here.
+> Geolocation panorama IDs and labels are now available. Additional task annotations, code, prompts, and evaluation scripts will follow. Feedback and corrections are warmly welcome!
 
 ---
 
@@ -23,9 +23,9 @@ Code repository: <https://github.com/kaiXuewen/ERGeoBench>
 
 ## News
 
-- **2026-XX-XX**: Repository created. Full release coming soon.
-- **2026-XX-XX**: Paper accepted to ICML 2026.
-- **Coming soon**: Code, metadata, prompts, and evaluation scripts.
+- **2026-10-07**: Geolocation panorama IDs and labels are now publicly available: **2,207 panoramas across 56 countries**. See the [data release](data/README.md). We welcome feedback, suggestions, and corrections via [GitHub Issues](https://github.com/kaiXuewen/ERGeoBench/issues)!
+- **2026-05-01**: Our paper was accepted to **ICML 2026**.
+- **Coming soon**: Additional task annotations, code, prompts, and evaluation scripts.
 
 ---
 
